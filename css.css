@@ -1,0 +1,314 @@
+/* ............day2 Box model ..................*/
+.day2{
+    margin-top: 25px ;
+    background-color: yellow;
+}
+.hellow{
+    width: 128px;
+    background-color: green;
+    color: yellow;
+}
+.capital{
+    text-align: center;
+    margin-left: 129px;
+    padding: 5px;
+    border: 40px;
+    width: 100px;
+    width: 80%;
+    background-color: aqua;
+}
+#Ap{
+    color: gold;
+}
+.mirchi{
+    color: red;
+}
+.desavali{
+    color: indigo;
+}
+H1{
+    display: none;
+}
+h2{
+    visibility: hidden;
+}
+/* ...........day3.............. */
+/* .............display Properties...................... */
+.day3{
+    margin-top: 25px;
+}
+.flex{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+ .grid{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: repeat(5,1fr); 
+
+} 
+.grid input{
+border: none;
+border-bottom: 1px solid red;
+outline: none;
+}
+/* ..........Selectors................... */
+.grid p+p{
+    color: blue; 
+}
+.grid p+span{
+     color: red; 
+} 
+.grid + .grid{
+color: brown ;
+}
+.grid p{
+    color: pink; 
+}
+.grid >P{
+     color: red; 
+}
+.grid +p{
+     color:pink 
+}
+.grid ~p{
+    color: aqua;
+}
+/* ...............Positions ................*/
+.day4{
+    margin-top: 25px;
+    background-color: aqua;
+    width: 100%;
+    height: 1143px;
+    position: relative;
+}
+#static{
+    position: static;
+    margin-left: 572px;
+    width: 200px;
+    background-color: yellow;
+    text-align: center;
+    color: red;
+}
+.relative{
+    position: relative;
+    left: 500px;
+    width: 200px;
+    background-color: gold;
+    text-align: center;
+    color: aqua;
+}
+#absolute{
+    right: 0px;
+    background-color: red;
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    bottom: 0px;
+    color: gold;
+    display: flex;
+    align-items: center;
+}
+#fixed{
+    background-color: black;
+    color: red;
+    width: 33px;
+    position: fixed;
+    /* z-index: -1; */
+    bottom: 0px;
+    right: 9px;
+}
+.sticky{
+    position: sticky;
+    top: 0px;
+    background-color: yellow;
+    text-align: center;
+}
+/* ............psuedoclass.......... */
+.day5{
+    display: grid;
+    grid-template-columns: repeat;
+    grid-template-columns: repeat(2,1fr);
+    background-color: yellow;
+    margin-top: 20px;
+    position: relative;
+}
+.day5 #point{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: red;
+    margin-left: 20px;
+}
+.day5 img{
+    opacity: 0.5;
+}
+.day5 #hove:hover{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+ .day5 #activ:active{
+    background-color: aqua;
+    width: 100px;
+    height: 100px; 
+}
+.day5 #focs:focus{
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+}
+.day5 #zindex{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 1;
+    position: absolute;
+    box-shadow: tan;
+    color: blue;
+    left: 300px;
+    top: 200px;
+}
+.day5 #ancy:link{
+    color: red;
+}
+.day5 #visit:visited{
+    color: pink;
+}
+/* .............pseudo elements............ */
+.day5 #Fl::first-letter{
+    color: gold;
+    text-transform: lowercase;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.day5 #fl::first-line{
+     color: gold;
+    text-transform: uppercase;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.day5 #befor::before{
+    color: red;
+    content: "Lokesh";
+}
+.day5 #afte::after{
+    color: blue;
+    content: "Ravali";
+}
+/* ............transforms............. */
+.div6{
+    margin-top: 20px;
+    background-color: aqua;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transforms{
+    background-color:blue ;
+    width: 100px;
+    height: 30px;
+    color: white;
+    width: 225px;
+    height: 49px;
+    text-align: center;
+   /* text-align: center;
+    transform: rotate(45deg);
+    transform: rotate3d(1, 1, 1, 45deg);
+    transform: rotate3d(1, 1, 1, 45deg);
+    transform: rotateX(45deg);
+    transform: rotateY(45deg);
+    transform: rotateZ(45deg);
+    transform: scale(1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
+    transform: skew(10deg,10deg);
+    transform: skewX(10deg);
+    transform: skewY(10deg); */
+    transition: width 5s linear 1s;
+}
+.transforms:hover{ 
+    width: 500px;
+}
+/* ..................day */
+.keyframes{
+    margin-top: 20px;
+    padding-bottom: 100px;
+    width: 200px;
+    height: 100px;
+    border-top: 3px solid white;
+    border: 3px solid red;
+    border-radius: 50%;
+    background-color: yellow;
+    animation: test 5s 2;
+    position: relative;
+}
+@keyframes test{
+    /* from{top: 0px; background-color: red; width: 100px;}
+    to{top: 100px; background-color:yellow; width: 300px;} 
+    0%{top:0px; left:0px; background: red;}
+    25%{top:0px; left:100px; background:blue;}
+    50%{top:100px; left:0px; background: yellow;}
+    75%{top:100px; left:0px; background:aqua;}
+    100%{top:0px; left:0px; background:violet;}*/
+    0%{border-color: red;border-top-color: white ; transform: rotate(0deg);}
+    25%{border-color: blue;border-top-color: white ;}
+    50%{border-color: yellow;border-top-color: white ;}
+    75%{border-color: aqua;border-top-color: white ;}
+    100%{border-color:purple;border-top-color: white ;transform: rotate(360deg);}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ..................day8 mediaqueries............................. */
+.day8{
+    margin-top: 40px;
+}
+header {
+    background-color: green;
+    color: red;
+    text-align: center;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+.nav-main-nav {
+    display: flex;
+}
+
+nav {
+    width: 20%;
+    background-color: black;
+    color: red;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul a:hover {
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
+footer{
+    background-color: green;
+    text-align: center;
+}
+@media (max-width:625px){
+    nav,Main{
+        background-color: pink;
+        width: 100%;
+    }
+}

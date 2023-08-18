@@ -1,0 +1,1 @@
+let h3Tag = document.getElementsByClassName('class')
